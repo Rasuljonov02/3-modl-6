@@ -1,0 +1,60 @@
+@use "./mixins.scss";
+
+.images {
+ // background-color: #16ffab;
+ padding: 24px;
+ width: 887px;
+ display: flex;
+ gap: 30px;
+ overflow: scroll;
+ &::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+ }
+	.img {
+		position: relative;
+		width: 244px;
+		height: 299px;
+		color: #16ffab;
+		flex-shrink: 0;
+		border-radius: 10px;
+		// background-image: url(/img/Rectangle\ 33.png);
+		p {
+			padding: 10px;
+			@include mixins.size(#16ffab, 12px, none, 700, none, none);
+
+		}
+	}
+}
+.text {
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 244px;
+	height: 92px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	backdrop-filter: blur(5px);
+	h4 {
+		@include mixins.size(none, 17px, none, 700, none, 0.34px);
+	}
+ h5{
+  @include mixins.size(none, 14px, none, 400, none, 0.34px);
+  opacity: 0.699999988079071;
+ }
+}
+
+.img_1{
+ background-image: url(/img/Rectangle\ 33.png);
+}
+.img_2{
+ background-image: url(/img/Rectangle\ 33\ \(1\).png);
+}
+.img_3{
+ background-image: url(/img/Rectangle\ 33\ \(2\).png);
+}
+.img_4{
+ background-image: url(/img/Rectangle\ 33.png);
+}

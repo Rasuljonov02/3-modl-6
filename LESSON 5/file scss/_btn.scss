@@ -1,0 +1,31 @@
+.btn_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.input_1 {
+  display: flex;
+  width: 222px;
+  height: 40px;
+  padding: 8px;
+//   justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #dde2e4;
+  color: #dde2e4;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    p{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        @include style(#252C32,14px,normal,400,24px,-0.084px);
+
+    }
+}

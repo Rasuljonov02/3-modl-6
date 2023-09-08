@@ -1,0 +1,15 @@
+@use "./scss/index.scss";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	background: #2e2e2e;
+}
+.container {
+	display: flex;
+
+}

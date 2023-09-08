@@ -1,0 +1,50 @@
+@import "./funcsion.scss";
+.left {
+  width: 20%;
+  height: auto;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 25px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.box_1 {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+p {
+  @include style(#344054,14px,normal,500,24px,none);
+
+}
+.footer {
+  margin-top: 430px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 10px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+hr{
+    background: #EAECF0;
+}

@@ -1,0 +1,37 @@
+@mixin center-grid {
+	display: grid;
+	place-items: center;
+}
+@mixin center-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin size($color, $size, $style: normal, $w, $h: normal, $space) {
+	color: $color;
+	font-family: Cera Compact Pro;
+	font-size: $size;
+	font-style: $style;
+	font-weight: $w;
+	line-height: $h;
+	letter-spacing: $space;
+}
+
+@mixin flex($justify-content: null, $align-items: null,$flex-direction:null) {
+	display: flex;
+	@if $align-items != null {
+	align-items:$align-items;
+	}
+	@if $justify-content != null {
+		justify-content: $justify-content;
+	}
+	@if $flex-direction != null {
+		flex-direction:$flex-direction;
+		}
+}
+
+
+.box{
+	@include flex(column, f, -direction)
+}
